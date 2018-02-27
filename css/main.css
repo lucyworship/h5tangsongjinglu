@@ -1,0 +1,58 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section,canvas {
+    padding: 0;
+    margin: 0;
+}
+li{ list-style: none;}
+
+html,body {
+    font-size: 22px;
+    color: #000;
+    font-family: 'Microsoft YaHei', Arial;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #000;
+
+    -webkit-touch-callout:none; /* 禁用长触弹出的下载图片菜单 */
+    -webkit-user-select:none; /* 禁用长触选择文字等功能 */
+}
+.hide{ display: none;}
+
+.loading{width: 640px; height: 1039px; position: absolute; left: 50%; top: 50%; margin: -520px 0 0 -320px;background: #ebebeb; }
+.loading>div{position: absolute; left: 50%; top: 50%;}
+.loadtext{margin: 121px 0 0 -24px;}
+.loadimg>div{position: absolute; left: 50%; top: 50%;}
+.load-1{margin: -82px 0 0 -91px}
+.load-2{margin: -59px 0 0 -247px}
+.load-3{margin: -70px 0 0 28px}
+
+.main{width: 640px; height: 1039px; overflow: hidden;}
+.page1{position: absolute; left: 50%; top: 50%; width: 640px; height: 1039px; margin: -520px 0 0 -320px; overflow: hidden;}
+.page1 div{position: absolute; left: 50%; top: 50%;}
+.p1-drum{margin-top: -54px}
+.p1-1{margin: 27px 0 0 -222px;}
+.p1-2{margin: 173px 0 0 -170px;}
+.p1-3{margin: 166px 0 0 47px;}
+.p1-4{margin: 168px 0 0 -84px;}
+.p1-5{margin: 168px 0 0 35px;}
+.t-1{margin: 91px 0 0 -91px}
+
+.y-1{margin: -480px 0 0 -410px}
+.y-2{margin: -520px 0 0 -500px}
+.y-3{margin: -810px 0 0 -444px}
+.y-4{margin: 10px 0 0px -500px}
+.y-5{margin: -80px 0 0 -400px}
+.y-6{margin: 340px 0 0 -350px}
+
+.float-video{width: 100%; height: 100%; background-color: #ebebeb; margin: -520px 0 0 -320px;}
+.video-box{width: 640px; height: 1042px; margin: -520px 0 0 -320px;}
+#video{position: absolute; left: 0%; top: 0%; width: 100%; height: 100%; }
+
+.p1-end{width: 640px; height: 1039px; margin: -520px 0 0 -320px; background: url("../images/p2-bg.png") no-repeat center center;}
+.p2-1{background: url("../images/p2-1.jpg") no-repeat center top; width: 181px; height: 0px; overflow: hidden; margin: -520px 0 0 -90px;}
+.p2-2-1{margin: -384px 0 0 -102px;}
+.p2-2{margin: -384px 0 0 -102px;}
+.p2-3{margin: 92px 0 0 -122px;}
+.p2-4{margin: 188px 0 0 -320px;}

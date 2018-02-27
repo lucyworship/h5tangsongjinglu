@@ -1,0 +1,133 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                var phoneScale = parseInt(window.screen.width)/640;
+                document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        }else{
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+    </script><meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+    <title>棠颂·璟庐</title>
+</head>
+<body>
+    
+    <div class="main hide" style="display: block;">
+        <div class="page1">
+            <div class="video-box">
+                <video id="video" preload="true" webkit-playsinline="true" playsinline="true" x-webkit-airplay="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint">
+                    <source src="http://petal.oss-cn-beijing.aliyuncs.com/2017090104.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="float-video"></div>
+            <div class="p1-cloud">
+                <div class="y-1" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-1.png" alt=""></div>
+                <div class="y-2" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-2.png" alt=""></div>
+                <div class="y-3" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-3.png" alt=""></div>
+                <div class="y-4" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-3.png" alt=""></div>
+                <div class="y-5" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-1.png" alt=""></div>
+                <div class="y-6" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><img src="images/y-6.png" alt=""></div>
+            </div>
+            <div class="p1-drum" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="p1-1"><img src="images/p1-1.png" alt=""></div>
+                <div class="p1-2"><img src="images/p1-2.png" alt=""></div>
+                <div class="p1-3"><img src="images/p1-3.png" alt=""></div>
+                <div class="p1-4"><img src="images/p1-4.png" alt=""></div>
+                <div class="p1-5"><img src="images/p1-4.png" alt=""></div>
+                <div class="t-1"><img src="images/t-1.png" alt=""></div>
+            </div>
+            
+            <div class="p1-end hide">
+                <div class="p2-1"></div>
+                <div class="p2-2-1 hide"><img src="images/p2-2.png" alt=""></div>
+                <div class="p2-2" style="opacity: 0; transform: matrix(3, 0, 0, 3, 0, 0);"><img src="images/p2-2.png" alt=""></div>
+                <div class="p2-3" style="opacity: 0;"><img src="images/p2-3.png" alt=""></div>
+                <div class="p2-4" style="transform: matrix(1, 0, 0, 1, 0, -1300);"><img src="images/p2-4.png" alt=""></div>
+            </div>
+        </div>
+        <audio id="drum-1" src="images/drum-1.mp3" preload="auto"></audio>
+        <audio id="drum-2" src="images/drum-2.mp3" preload="auto"></audio>
+    </div>
+    <div style="display: none;">
+    	<script src="https://s22.cnzz.com/z_stat.php?id=1264360999&amp;web_id=1264360999" language="JavaScript"></script><script src="https://c.cnzz.com/core.php?web_id=1264360999&amp;t=z" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1264360999" target="_blank" title="站长统计">站长统计</a>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/PreloadJS/0.4.1/preloadjs.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <!--<script type="text/javascript" src="js/soundjs-0.6.0.min.js"></script>-->
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        var url_QiongHe_SB = "http://h5.trando9.cn/api/wx/index.php?w=jssdk";
+        var imgUrl = "http://h5.trando9.cn/44/images/";
+
+        var toURL = window.location.href.substring(0,location.href.lastIndexOf('/'));
+        var wxDefault;
+        var titileArr='启著北京合院新章';  
+        var descArr='棠颂·璟庐';
+
+        wxDefault = {
+            title:titileArr,
+            desc:descArr,
+            imgUrl:imgUrl+"share.jpg",
+            link:"http://works.trando.com.cn/44/index.html",
+            success:function(){
+            	window.location.href = 'http://mp.weixin.qq.com/s/5Z0ZXl3ux6878bvxSzY23Q'
+            }
+        };
+
+        $(function(){
+            var pageUrl = location.href;
+            $.ajax({
+                url:url_QiongHe_SB,
+                dataType:"jsonp",
+                jsonp:"jsoncallback",
+                data:{url:encodeURIComponent(pageUrl)},
+                success:function(data){
+                    console.log(data);
+                    data.debug = false;
+                    wx.config(data);
+                    wx.ready(function(){
+                        $('#drum-1')[0].play();
+                        $('#drum-1')[0].pause();
+                        $('#drum-2')[0].play();
+                        $('#drum-2')[0].pause();
+                        wxShare();
+                        //隐藏所有非基础按钮
+                        // wx.hideAllNonBaseMenuItem();
+                    });
+                }
+            })
+        });
+        function wxShare(data){
+            if(typeof(wx) == "undefined"){
+                return;
+            }
+            var newData = $.extend({},wxDefault, data);
+            wx.onMenuShareAppMessage({
+                title:newData.title,
+                desc:newData.desc,
+                imgUrl:newData.imgUrl,
+                link:newData.link,
+                success: newData.success
+            });
+            wx.onMenuShareQQ(newData);
+            wx.onMenuShareWeibo(newData);
+            wx.onMenuShareTimeline({
+                title:newData.title,
+                imgUrl:newData.imgUrl,
+                link:newData.link,
+                success: newData.success
+            });
+        }
+    </script>
+
+
+</body></html>
