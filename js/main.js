@@ -77,9 +77,9 @@ $(function () {
         {src:loadingPath+'y-1.png'},
         {src:loadingPath+'y-2.png'},
         {src:loadingPath+'y-3.png'},
-        {src:loadingPath+'y-6.png'},
-        {src:loadingPath+'drum-1.mp3'},
-        {src:loadingPath+'drum-2.mp3'}
+        {src:loadingPath+'y-6.png'}
+        // {src:loadingPath+'drum-1.mp3'},
+        // {src:loadingPath+'drum-2.mp3'}
 
     ];
 
