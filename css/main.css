@@ -51,7 +51,7 @@ html,body {
 #video{position: absolute; left: 0%; top: 0%; width: 100%; height: 100%; }
 
 .p1-end{width: 640px; height: 1039px; margin: -520px 0 0 -320px; background: url("../images/p2-bg.png") no-repeat center center;}
-.p2-1{background: url("../images/p2-1.jpg") no-repeat center top; width: 181px; height: 0px; overflow: hidden; margin: -520px 0 0 -90px;}
+.p2-1{background: url("../images/p2-1-1.jpg") no-repeat center top; width: 181px; height: 0px; overflow: hidden; margin: -520px 0 0 -90px;}
 .p2-2-1{margin: -384px 0 0 -102px;}
 .p2-2{margin: -384px 0 0 -102px;}
 .p2-3{margin: 92px 0 0 -122px;}
